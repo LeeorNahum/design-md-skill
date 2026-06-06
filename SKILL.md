@@ -1,6 +1,6 @@
 ---
 name: design-md
-description: Create, update, and maintain a DESIGN.md file as a repository's living source of truth for its visual identity, following the open DESIGN.md token-and-prose spec and validating with its CLI. Use when starting a design system, defining or changing design tokens, or keeping DESIGN.md in sync with the implemented UI.
+description: Create, update, maintain, and apply a DESIGN.md, the file that serves as a repository's living source of truth for its visual identity. Use for any work on a product's look and feel: building or restyling UI, components, layouts, colors, typography, spacing, or themes; starting a design system; defining or changing design tokens; or reading and keeping DESIGN.md in sync with the implemented UI.
 metadata:
   author: Leeor Nahum
   version: "1.1.0"
