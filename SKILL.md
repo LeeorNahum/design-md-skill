@@ -1,8 +1,8 @@
 ---
-name: design-md
-description: Create, update, maintain, and apply a DESIGN.md, the file that serves as a repository's living source of truth for its visual identity. Use for any work on a product's look and feel: building or restyling UI, components, layouts, colors, typography, spacing, or themes; starting a design system; defining or changing design tokens; or reading and keeping DESIGN.md in sync with the implemented UI.
+name: "design-md"
+description: "Create, update, maintain, and apply a DESIGN.md, the file that serves as a repository's living source of truth for its visual identity. Use for any work on a product's look and feel: building or restyling UI, components, layouts, colors, typography, spacing, or themes; starting a design system; defining or changing design tokens; or reading and keeping DESIGN.md in sync with the implemented UI."
 metadata:
-  author: Leeor Nahum
+  author: "Leeor Nahum"
   version: "1.2.1"
 ---
 
