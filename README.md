@@ -9,7 +9,7 @@ It redirects to one vendored reference, the full spec, kept in sync with its ups
 Add as a submodule into your agent's skills directory:
 
 ```bash
-git submodule add https://github.com/LeeorNahum/design-md-skill.git .agents/skills/design-md-skill
+git submodule add https://github.com/LeeorNahum/design-md-skill.git .agents/skills/design-md
 ```
 
 ## What's inside
