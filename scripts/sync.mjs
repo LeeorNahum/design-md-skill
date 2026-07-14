@@ -43,7 +43,27 @@ async function getText(url) {
   return res.text();
 }
 
+function printHelp() {
+  console.log(`Usage: node scripts/sync.mjs [--help]
+
+Vendors the DESIGN.md spec from its upstream source of truth
+(google-labs-code/design.md, docs/spec.md) into references/spec.md.
+
+Requires Node 18+ and network access to github.com and
+raw.githubusercontent.com. Writes references/spec.md, overwriting
+its current contents.
+
+Options:
+  -h, --help  Print this message and exit without making any network
+              calls or file writes.`);
+}
+
 async function main() {
+  if (process.argv.includes("--help") || process.argv.includes("-h")) {
+    printHelp();
+    return;
+  }
+
   await mkdir(REFS, { recursive: true });
 
   // Resolve the upstream commit so the fetch is consistent and recordable.

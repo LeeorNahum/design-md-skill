@@ -1,20 +1,20 @@
 ---
 name: "design-md"
-description: "Create, update, maintain, and apply a DESIGN.md, the file that serves as a repository's living source of truth for its visual identity. Use for any work on a product's look and feel: building or restyling UI, components, layouts, colors, typography, spacing, or themes; starting a design system; defining or changing design tokens; or reading and keeping DESIGN.md in sync with the implemented UI."
+description: "Create, update, apply, and validate a repository's DESIGN.md, the token-and-prose file that is a repository's living source of truth for its visual identity. Use when building or restyling UI, components, layouts, colors, typography, spacing, or themes in a repository that has, or should have, a DESIGN.md, including using its tokens and identity to guide external visual assets such as a logo or marketing material that need to stay on-brand. Use when starting a design system for a repository, when defining or changing design tokens that DESIGN.md should record, or when reading DESIGN.md and keeping it in sync with the implemented UI."
 metadata:
   author: "Leeor Nahum"
-  version: "1.2.2"
+  version: "1.3.1"
 ---
 
 # DESIGN.md
 
-A `DESIGN.md` at the repository root is the living source of truth for a product's visual identity. It pairs machine-readable design tokens in YAML front matter with human-readable rationale in Markdown prose. The tokens are normative; the prose explains how to apply them. Keep this one file authoritative so every agent and every session designs from the same identity instead of drifting.
+A `DESIGN.md` at the repository root is the living source of truth for a product's visual identity. It pairs machine-readable design tokens in YAML front matter with human-readable rationale in Markdown prose. The tokens are normative. The prose explains how to apply them. Keep this one file authoritative so every agent and every session designs from the same identity instead of drifting.
 
 This skill follows the open DESIGN.md standard. The full spec is vendored at `references/spec.md` and synced from its upstream source of truth, [google-labs-code/design.md](https://github.com/google-labs-code/design.md).
 
 ## Reference Loading
 
-- Read `references/spec.md` before creating or editing a DESIGN.md, or whenever unsure about the token schema, the token reference syntax, the section set, or the required section order. It is the normative spec; follow it exactly.
+- Read `references/spec.md` before creating or editing a DESIGN.md, or whenever unsure about the token schema, the token reference syntax, the section set, or the required section order. It is the normative spec. Follow it exactly.
 
 ## Modes
 
@@ -48,6 +48,6 @@ When a project has no design system or token wiring yet, let `DESIGN.md` be the 
 npx "@google/design.md" export --format css-tailwind DESIGN.md
 ```
 
-When a project already wires its own tokens, do not impose this export; it dictates an output shape and adds a generated file to keep in sync. Use `DESIGN.md` as the reference those existing tokens follow instead.
+When a project already wires its own tokens, do not impose this export. It dictates an output shape and adds a generated file to keep in sync. Use `DESIGN.md` as the reference those existing tokens follow instead.
 
 Compare two versions for regressions during review with `npx "@google/design.md" diff <before> <after>`.
