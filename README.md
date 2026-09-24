@@ -23,4 +23,4 @@ git submodule add https://github.com/LeeorNahum/design-md-skill.git .agents/skil
 
 ## Stays up to date
 
-`references/spec.md` is vendored from `google-labs-code/design.md` `docs/spec.md`. The sync workflow runs weekly and on demand, and records the exact upstream commit in each sync commit. Validate any DESIGN.md with the official CLI: `npx "@google/design.md" lint DESIGN.md`.
+`references/spec.md` is vendored from `google-labs-code/design.md` `docs/spec.md`. The sync workflow runs weekly and on demand, and records the exact upstream commit in each sync commit.
