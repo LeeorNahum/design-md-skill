@@ -4,7 +4,7 @@ description: "Use when building or restyling UI, components, layouts, colors, ty
 compatibility: "Requires Node.js 18 or later, npm, and network access when the official CLI is not cached."
 metadata:
   author: "Leeor Nahum"
-  version: "1.4.0"
+  version: "1.4.1"
 ---
 
 # DESIGN.md
@@ -35,7 +35,7 @@ This skill follows the open DESIGN.md standard. The full spec is vendored at [sp
 
 `DESIGN.md` exists to stop drift, not to prevent better design. It is a living file, and whoever designs against it has the standing to change it: the same judgment that authored it can revise it. Take it seriously and take it with a grain of salt.
 
-So when a genuinely better choice conflicts with the file, neither violate it quietly nor abandon the choice. Make the change and update the file in the same pass, so the identity stays one thing. Treat a rule as binding when the reason behind it still holds, and rewrite the rule when it does not. A stated exception belongs in the file. An unstated one is just drift.
+So when a genuinely better choice conflicts with the file, neither violate it quietly nor abandon the choice. Revise the file, so the identity stays one thing. Treat a rule as binding when the reason behind it still holds, and rewrite the rule when it does not. A stated exception belongs in the file. An unstated one is just drift.
 
 ## Validate
 
